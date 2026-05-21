@@ -1,6 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
 import Slider from '../components/Slider.jsx'
-import heroImage from '../assets/hero.png'
 
 function Home() {
   return (
