@@ -168,6 +168,11 @@ img {
   color: #8b3b2d;
 }
 
+.secondary-button:hover {
+  background: rgba(194, 97, 79, 0.24);
+  color: #8b3b2d;
+}
+
 .home-intro,
 .page .section-block {
   padding: 1rem 0;
@@ -313,11 +318,26 @@ img {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer-links a {
   color: #8b3b2d;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #c2614f;
+}
+
+.footer-links a svg {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 @media (max-width: 900px) {
