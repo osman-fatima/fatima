@@ -4,14 +4,13 @@ const navLinks = [
   { path: '/', label: 'Home' },
   { path: '/about', label: 'About' },
   { path: '/services', label: 'Services' },
-  { path: '/prices', label: 'Prices' },
-  { path: '/contact', label: 'Contact' }
+  { path: '/contact', label: 'Book Now' }
 ]
 
 function Navbar() {
   return (
     <header className="app-navbar">
-      <div className="brand">Nailes Studio</div>
+      <div className="brand">I Nailed It</div>
       <nav>
         <ul className="nav-list">
           {navLinks.map((link) => (

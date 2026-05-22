@@ -1,42 +1,83 @@
-﻿import { Link } from 'react-router-dom'
-import Slider from '../components/Slider.jsx'
-
-function Home() {
+﻿
+import {Link} from "react-router-dom";
+export default function Home() {
   return (
-    <section className="page home-page">
-      <div className="hero-panel">
+    <div className="page home-page">
+      <section className="hero-panel">
         <div className="hero-copy">
-          <p className="eyebrow">Nail Studio Booking</p>
-          <h1>Beautiful nails, faster bookings.</h1>
+          <p className="eyebrow"> I Nailed It</p>
+
+          <h1>
+            Elegant nails designed to match your style.
+          </h1>
+
           <p className="hero-text">
-            Nailes Studio helps your clients choose a service, preview prices,
-            and request an appointment directly from the website.
+            From classic manicures to modern nail art, we create beautiful
+            looks that make you feel confident every day.
           </p>
+
           <div className="hero-actions">
-            <Link className="button primary-button" to="/contact">
-              Book an appointment
-            </Link>
-            <Link className="button secondary-button" to="/prices">
-              Estimate cost
+           <Link to="/contact" className="button secondary-button">
+              Book NOW!
             </Link>
           </div>
         </div>
-        <div className="hero-image">
-          <img src={heroImage} alt="Nail studio hero" />
-        </div>
-      </div>
-      <section className="home-intro">
-        <div>
-          <h2>Why clients love Nailes Studio</h2>
-          <p>
-            Responsive styling, clear service pricing, and a contact form that
-            turns visitors into real appointments.
-          </p>
+
+        <div className="hero-slider">
+          <div className="slides">
+            <img src="nails1.jpeg" alt="image1"
+            />
+
+            <img src="nails3.jpeg" alt="image2" />
+
+            <img
+              src="nails4.jpeg"
+              alt="image3"
+            />
+
+            <img
+              src="nails1.jpeg"
+              alt="image1"
+            />
+
+            <img
+              src="nails3.jpeg"
+              alt="image2"
+            />
+
+            <img
+              src="nails4.jpeg"
+              alt="image3"
+            />
+          </div>
         </div>
       </section>
-      <Slider />
-    </section>
-  )
-}
 
-export default Home
+      <section className="home-intro">
+        <div className="service-grid">
+          <div className="feature-card">
+            <h3>Premium Products</h3>
+            <p>
+              We use high-quality nail products to ensure beautiful and
+              long-lasting results.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <h3>Creative Nail Art</h3>
+            <p>
+              Minimal, elegant, bold, or trendy designs tailored to your style.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <h3>Relaxing Experience</h3>
+            <p>
+              Enjoy a comfortable and relaxing atmosphere during every visit.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

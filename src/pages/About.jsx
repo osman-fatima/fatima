@@ -7,7 +7,7 @@
           <h1>Trusted nail care for every appointment.</h1>
           <p>
             Nailes Studio is a responsive client-facing frontend that makes it
-            easier to browse services, review prices, and submit an appointment
+            easier to browse services and submit an appointment
             request from any device.
           </p>
         </div>

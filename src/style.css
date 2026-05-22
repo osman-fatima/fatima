@@ -117,8 +117,8 @@ img {
 }
 
 .hero-copy h1,
-.section-block h1 {
-  margin: 0;
+.section-block h1{
+  margin: 10px;
   font-size: clamp(2.5rem, 4vw, 4rem);
   line-height: 1.02;
 }
@@ -139,12 +139,7 @@ img {
   margin-top: 1.75rem;
 }
 
-.hero-image img {
-  width: 100%;
-  border-radius: 24px;
-  object-fit: cover;
-  box-shadow: 0 22px 65px rgba(83, 42, 22, 0.14);
-}
+
 
 .button {
   border: none;
@@ -279,8 +274,17 @@ img {
   color: #8b3b2d;
 }
 
+.contact-page {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.contact-page .section-block {
+  grid-column: 2 / 11;
+}
+
 .contact-grid {
-  grid-template-columns: minmax(300px, 1fr) 320px;
+  grid-column: 2 / 12;
+  grid-template-columns: minmax(600px, 1fr) 320px;
   gap: 1.5rem;
 }
 
@@ -339,26 +343,35 @@ img {
   width: 1.2rem;
   height: 1.2rem;
 }
-
-@media (max-width: 900px) {
-  .hero-panel,
-  .price-grid,
-  .contact-grid,
-  .two-column {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-actions {
-    justify-content: stretch;
-  }
+.hero-slider {
+  overflow: hidden;
+  border-radius: 24px;
+  width: 100%;
 }
 
-@media (max-width: 650px) {
-  .app-navbar {
-    padding: 1rem;
+.slides {
+  display: flex;
+  width: max-content;
+  gap: 0rem;
+  animation: smoothSlide 10s linear infinite;
+}
+
+.slides img {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0px;
+  flex-shrink: 0;
+  box-shadow: 0 22px 65px rgba(83, 42, 22, 0.14);
+}
+
+/* smooth infinite sliding */
+@keyframes smoothSlide {
+  from {
+    transform: translateX(0);
   }
 
-  .nav-list {
-    justify-content: center;
+  to {
+    transform: translateX(-50%);
   }
 }
