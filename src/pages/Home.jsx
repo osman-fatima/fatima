@@ -22,7 +22,7 @@ export default function Home() {
               Book NOW!
             </Link>
           </div>
-
+</div>
         <div className="hero-slider">
           <div className="slides">
             <img src="nails1.jpeg" alt="image1"
@@ -50,7 +50,6 @@ export default function Home() {
               alt="image3"
             />
           </div>
-        </div>
         </div>
       </section>
 
