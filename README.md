@@ -70,27 +70,26 @@ npm run dev
 
 ## Home Page
 
-```md
+
 ![Home Page](./screenshots/Home.png)
-```
+
 
 ## Booking Page
 
-```md
+
 ![Booking Page](./screenshots/Booking.png)
-```
+
 
 ## About Page
 
-```md
-![About Page](./screeshots/About.png)
-```
+
+![About Page](./screenshots/About.png)
+
 
 ## Service Page
 
-```md
-![Service page](./screenshots/Service.png)
-```
+![Service Page](./screenshots/Service.png)
+
 ---
 
 # Author
