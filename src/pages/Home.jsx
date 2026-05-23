@@ -5,7 +5,7 @@ export default function Home() {
     <div className="page home-page">
       <section className="hero-panel">
         <div className="hero-copy">
-          <p className="eyebrow"> I Nailed It</p>
+          <p className="eyebrow" > I Nailed It</p>
 
 
           <h1>
@@ -22,7 +22,6 @@ export default function Home() {
               Book NOW!
             </Link>
           </div>
-        </div>
 
         <div className="hero-slider">
           <div className="slides">
@@ -51,6 +50,7 @@ export default function Home() {
               alt="image3"
             />
           </div>
+        </div>
         </div>
       </section>
 
