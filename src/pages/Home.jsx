@@ -7,6 +7,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"> I Nailed It</p>
 
+
           <h1>
             Elegant nails designed to match your style.
           </h1>
