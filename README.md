@@ -1,18 +1,98 @@
 
-# React + Vite
+# Nailes Studio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern responsive nail salon website built using React and Vite.
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a responsive nail salon website designed for Nailes Studio.  
+It allows users to:
 
-## React Compiler
+- View salon services
+- Browse animated nail images
+- Book appointments
+- Calculate service prices dynamically
+- Contact the salon through social links
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The website was built using React, Vite, and CSS.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# fatima
+# Technologies Used
+
+- React
+- Vite
+- React Router DOM
+- CSS3
+
+---
+
+# Setup Instructions
+
+## 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_LINK
+```
+
+## 2. Open the project folder
+
+```bash
+cd nails.web
+```
+
+## 3. Install dependencies
+
+```bash
+npm install
+```
+
+## 4. Run the development server
+
+```bash
+npm run dev
+```
+
+---
+
+# Features
+
+- Responsive design
+- Infinite smooth image slider
+- Booking/contact page
+- Dynamic price summary
+- Mobile-friendly layout
+- Footer with social media links
+
+---
+
+# Screenshots of the UI
+
+## Home Page
+
+```md
+![Home Page](./screenshots/Home.png)
+```
+
+## Booking Page
+
+```md
+![Booking Page](./screenshots/Booking.png)
+```
+
+## About Page
+
+```md
+![About Page](./screeshots/About.png)
+```
+
+## Service Page
+
+```md
+![Service page](./screenshots/Service.png)
+```
+---
+
+# Author
+
+Fatima Osman
