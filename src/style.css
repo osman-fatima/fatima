@@ -407,6 +407,7 @@ img {
   }
 
   .nav-list {
+    width: 100%;
     flex-wrap: nowrap;
     justify-content: center;
     gap: clamp(0.1rem, 1.5vw, 0.5rem);
@@ -428,6 +429,7 @@ img {
     grid-template-areas:
       "copy"
       "image";
+    align-items: start;
     gap: 1.5rem;
     padding: 1.5rem;
   }
@@ -435,17 +437,20 @@ img {
   .hero-copy {
     grid-area: copy;
     min-width: 0;
+    width: 100%;
   }
 
   .hero-slider {
     grid-area: image;
+    min-width: 0;
   }
 
   .hero-copy h1 {
     margin: 0;
     font-size: 2rem;
     line-height: 1.1;
-    overflow-wrap: anywhere;
+    word-break: normal;
+    overflow-wrap: normal;
   }
 
   .hero-copy .hero-text {
