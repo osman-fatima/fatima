@@ -390,20 +390,74 @@ img {
     padding: 1rem;
   }
 
+  .app-navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .app-navbar nav {
+    width: 100%;
+  }
+
+  .brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: clamp(0.1rem, 1.5vw, 0.5rem);
+  }
+
+  .nav-list li {
+    min-width: 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem clamp(0.3rem, 1.8vw, 0.75rem);
+    font-size: clamp(0.72rem, 2.5vw, 0.9rem);
+    white-space: nowrap;
+  }
+
   .hero-panel {
     grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "copy"
+      "image";
     gap: 1.5rem;
     padding: 1.5rem;
   }
 
-  .hero-copy h1 {
-    font-size: 2rem;
-    line-height: 1.1;
+  .hero-copy {
+    grid-area: copy;
+    min-width: 0;
   }
 
-  .hero-copy p {
+  .hero-slider {
+    grid-area: image;
+  }
+
+  .hero-copy h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-copy .hero-text {
+    width: 100%;
+    max-width: none;
+    margin: 0;
     font-size: 0.95rem;
-    line-height: 1.4;
+    line-height: 1.5;
+  }
+
+  .hero-actions {
+    margin-top: 1rem;
   }
 
   .slides img {
@@ -448,6 +502,7 @@ img {
 
   .hero-copy {
     width: 100%;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -460,7 +515,6 @@ img {
   .hero-copy h1 {
     font-size: 1.75rem;
     line-height: 1.2;
-    margin: 0;
   }
 
   .hero-slider {
@@ -471,7 +525,6 @@ img {
   .hero-copy .hero-text {
     font-size: 0.9rem;
     line-height: 1.4;
-    margin: 0;
   }
 
   .hero-actions {
@@ -481,30 +534,6 @@ img {
 
   .page-content {
     padding: 0.75rem;
-  }
-
-  .app-navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .nav-list {
-    justify-content: center;
-    align-items: center;
-    gap: 0.4rem;
-  }
-
-  .nav-link {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
-
-  .brand {
-    width: 100%;
-    text-align: center;
   }
 
   .app-footer {
