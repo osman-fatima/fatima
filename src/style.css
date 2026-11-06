@@ -496,7 +496,7 @@ img {
 
   .contact-grid {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 @media (max-width: 480px) {
